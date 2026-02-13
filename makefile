@@ -1,30 +1,15 @@
-# Makefile for g++ in Cygwin
-
-# Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -g
+CXXFLAGS = -Wall -g -std=c++17
+INCLUDES = -Iinclude
 
-# Target executable name
-TARGET = MyProgram.exe
+SRC = $(wildcard *.cpp)
+TARGET = dsa.exe
 
-# Source files
-SRC = MyProgram.cpp
+all:
+	@$(CXX) $(CXXFLAGS) $(INCLUDES) $(SRC) -o $(TARGET)
 
-MAKEFLAGS += --no-print-directory
-
-# Default rule
-all: $(TARGET)
-
-
-$(TARGET): $(SRC)
-	@$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
-
-# Run rule (always rebuild first)
-run:
-	@$(MAKE) all
+run: all
 	@./$(TARGET)
 
-# Clean rule
 clean:
-	@rm -f $(TARGET) *.o
-
+	@rm -f $(TARGET)
