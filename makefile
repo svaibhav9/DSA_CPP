@@ -17,14 +17,14 @@ all: $(TARGET)
 
 
 $(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+	@$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
 # Run rule (always rebuild first)
 run:
-	$(MAKE) all
-	./$(TARGET)
+	@$(MAKE) all
+	@./$(TARGET)
 
 # Clean rule
 clean:
-	rm -f $(TARGET) *.o
+	@rm -f $(TARGET) *.o
 
