@@ -37,6 +37,5 @@ void BitInvert::invert(char n)
 
    cout <<"\n\ninvert trick = "<< (~n);
    cout <<"\nnum of 1s = "<<count1<<" num of 0s = "<<count0<<endl;
-   //cout << "2's complement = " << r1;
 }
    
