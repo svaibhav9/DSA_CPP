@@ -1,7 +1,6 @@
 #include <string>
-using namespace std;
 
 class ReverseWord{
 public:
-    void RevWord(string &s);
+    void RevWord(std::string &s);
 };
