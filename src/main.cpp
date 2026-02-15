@@ -3,6 +3,7 @@
 #include "BitInvert.hpp"
 #include "TwoComplement.hpp"
 #include "ReverseWord.hpp"
+#include "BitReverse.hpp"
 
 using namespace std;
 
@@ -10,7 +11,7 @@ int main()
 {
     char n  = 5;
 
-    vector <string> TestList = {"Bit Invert", "Two Complement","Reverse Word", "End of List"};
+    vector <string> TestList = {"Bit Invert", "Two Complement","Reverse Word","Bit Reverse", "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
     {
         cout <<i+1<<" : "<<TestList[i]<<endl;
@@ -36,6 +37,11 @@ int main()
             string s = "Vaibhav";
             ReverseWord RW;
             RW.RevWord(s);
+            break;
+            }
+        case 4:{
+            BitReverse BR;
+            BR.reverse(n);
             break;
             }
         default:
