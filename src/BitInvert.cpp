@@ -1,4 +1,4 @@
-#include "main.hpp"
+#include "BitInvert.hpp"
 
 void BitInvert::invert(char n)
 {

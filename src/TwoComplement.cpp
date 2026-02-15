@@ -1,4 +1,4 @@
-#include "main.hpp"
+#include "TwoComplement.hpp"
 
 void TwoComplement::TwoComp(char n)
 {
