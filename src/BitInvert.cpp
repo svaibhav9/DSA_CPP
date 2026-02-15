@@ -1,4 +1,7 @@
+#include <iostream>
 #include "BitInvert.hpp"
+
+using namespace std;
 
 void BitInvert::invert(char n)
 {

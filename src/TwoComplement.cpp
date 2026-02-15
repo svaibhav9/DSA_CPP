@@ -1,4 +1,8 @@
+#include <iostream>
+#include <bitset>
 #include "TwoComplement.hpp"
+
+using namespace std;
 
 void TwoComplement::TwoComp(char n)
 {

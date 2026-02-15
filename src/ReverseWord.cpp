@@ -1,10 +1,13 @@
 #include <iostream>
+#include <string>
 #include "ReverseWord.hpp"
+
+using namespace std;
 
 void ReverseWord::RevWord(string &s)
 {
     int start = 0, end = s.length()-1;
-    std::cout<<"Length = "<<end<<endl;
+    cout<<"Length = "<<end<<endl;
     while (start < end)
     {
         char temp = s[start];
@@ -13,6 +16,6 @@ void ReverseWord::RevWord(string &s)
         start++;
         end--;
     }
-    std::cout<<"Reversed String = "<<s<<endl;
+    cout<<"Reversed String = "<<s<<endl;
 
 }
