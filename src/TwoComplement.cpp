@@ -19,7 +19,7 @@ void TwoComplement::TwoComp(char n)
     cout <<"Complement = "<< bitset<8>(n ^ mask)<<endl;
 
     int bits = 0,r = 0;
-    for (int i = 7; i > 0; i--)
+    for (int i = 7; i>= 0; i--)
     {
         bits = (n >> i) & 1; 
         r  |= ((bits ^ 1) << i);
