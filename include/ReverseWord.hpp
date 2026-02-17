@@ -2,5 +2,5 @@
 
 class ReverseWord{
 public:
-    void RevWord(std::string &s);
+    void RevWord(std::string &s,int,int);
 };
