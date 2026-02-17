@@ -2,8 +2,9 @@
 #include <vector>
 #include "BitInvert.hpp"
 #include "TwoComplement.hpp"
-#include "ReverseWord.hpp"
 #include "BitReverse.hpp"
+#include "RemoveDuplicates.hpp"
+#include "ReverseSentence.hpp"
 
 using namespace std;
 
@@ -11,7 +12,13 @@ int main()
 {
     char n  = 5;
 
-    vector <string> TestList = {"Bit Invert", "Two Complement","Reverse Word","Bit Reverse", "End of List"};
+    vector <string> TestList = {"Bit Invert", 
+                                "Bit Reverse", 
+                                "Two Complement",
+                                "Reverse Word",
+                                "Reverse Sentence",
+                                "Remove Duplicates",
+                                "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
     {
         cout <<i+1<<" : "<<TestList[i]<<endl;
@@ -29,19 +36,31 @@ int main()
             break;
             }
         case 2:{
+            BitReverse BR;
+            BR.reverse(n);
+            break;
+            }
+        case 3:{
             TwoComplement TC;
             TC.TwoComp(n);
             break;
             }
-        case 3:{
+        case 4:{
             string s = "Vaibhav";
             ReverseWord RW;
-            RW.RevWord(s);
+            RW.RevWord(s,0,s.length()-1);
             break;
             }
-        case 4:{
-            BitReverse BR;
-            BR.reverse(n);
+        case 5:{
+            string s = "This is a book";
+            ReverseSentence RS;
+            RS.RevSent(s);
+            break;
+            }
+        case 6:{
+            vector <int> n1 = {1,1,2,3,4,4,5};
+            RemoveDuplicates RD;
+            RD.RemDup(n1);
             break;
             }
         default:

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 #include "BitInvert.hpp"
 
 using namespace std;
@@ -17,7 +18,7 @@ void BitInvert::invert(char n)
    for (;i >= 0; --i) {
 
        bits = ((n >> i) & 1);
-       cout << bits << " ";
+       cout << bits;
    }
    cout << endl;
    char r1 = 0;
@@ -30,7 +31,7 @@ void BitInvert::invert(char n)
        else
            count0++;
        r = ((bits ^ 1) << i);
-       cout << (bits ^ 1) << " ";
+       cout << (bits ^ 1);
 
        r1 = r1 | r;
    }
@@ -38,7 +39,7 @@ void BitInvert::invert(char n)
    printf("\ninvert = %d",r1);
 
 
-   cout <<"\n\ninvert trick = "<< (~n);
+   cout <<"\n\ninvert trick = "<<bitset<8>(~n);
    cout <<"\nnum of 1s = "<<count1<<" num of 0s = "<<count0<<endl;
 }
    

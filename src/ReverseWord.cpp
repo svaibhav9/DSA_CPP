@@ -4,9 +4,8 @@
 
 using namespace std;
 
-void ReverseWord::RevWord(string &s)
+void ReverseWord::RevWord(string &s, int start, int end)
 {
-    int start = 0, end = s.length()-1;
     cout<<"Length = "<<end<<endl;
     while (start < end)
     {
