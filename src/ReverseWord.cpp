@@ -6,7 +6,7 @@ using namespace std;
 
 void ReverseWord::RevWord(string &s, int start, int end)
 {
-    cout<<"Length = "<<end<<endl;
+    //cout<<"Length = "<<end<<endl;
     while (start < end)
     {
         char temp = s[start];
@@ -15,6 +15,6 @@ void ReverseWord::RevWord(string &s, int start, int end)
         start++;
         end--;
     }
-    cout<<"Reversed String = "<<s<<endl;
+    //cout<<"Reversed String = "<<s<<endl;
 
 }

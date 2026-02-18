@@ -5,6 +5,7 @@
 #include "BitReverse.hpp"
 #include "RemoveDuplicates.hpp"
 #include "ReverseSentence.hpp"
+#include "ReverseOrderofWords.hpp"
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int main()
                                 "Two Complement",
                                 "Reverse Word",
                                 "Reverse Sentence",
+                                "ReverseOrder",
                                 "Remove Duplicates",
                                 "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
@@ -58,6 +60,12 @@ int main()
             break;
             }
         case 6:{
+            string s = "My name is Saksham";
+            ReverseOrder RO;
+            RO.RevOrder(s);
+            break;
+            }
+        case 7:{
             vector <int> n1 = {1,1,2,3,4,4,5};
             RemoveDuplicates RD;
             RD.RemDup(n1);
