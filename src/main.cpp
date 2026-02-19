@@ -8,6 +8,7 @@
 #include "ReverseSentence.hpp"
 #include "ReverseOrderofWords.hpp"
 #include "PalindromeString.hpp"
+#include "Anagram.hpp"
 
 using namespace std;
 
@@ -22,6 +23,7 @@ int main()
                                 "Reverse Sentence",
                                 "ReverseOrder",
                                 "Palindrome String",
+                                "Anagram",
                                 "Remove Duplicates",
                                 "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
@@ -80,6 +82,13 @@ int main()
             break;
             }
         case 8:{
+            string s = "tacocat";
+            string s2 ="catocat";
+            Anagram AG;
+            AG.Ana(s,s2);
+            break;
+            }
+        case 9:{
             vector <int> n1 = {1,1,2,3,4,4,5};
             RemoveDuplicates RD;
             RD.RemDup(n1);
