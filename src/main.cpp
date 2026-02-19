@@ -31,6 +31,7 @@ int main()
     }
     int choice = 0;
     cin >> choice;
+    cin.ignore();
     if (choice)
     {
     
@@ -69,8 +70,11 @@ int main()
             break;
             }
         case 7:{
-            string s = "Tacocat";
-            string s2 ="A man a plan a canal Panama";
+            //string s = "Tacocat";
+            //string s2 ="A man a plan a canal Panama";
+            string s;
+            cout <<"Enter String ";
+            getline(cin,s);
             PalinString PS;
             PS.PalString(s);
             break;

@@ -8,12 +8,11 @@ using namespace std;
 void PalinString::PalString(string &s)
 {
     //cout<<"Length = "<<end<<endl;
-    int start = 0;
-    int end = s.length()-1;
+    size_t start = 0;
     string cleaned;
-    while (start <= end)
+    while (start < s.length())
     {
-        if (s[start] != ' ' || start == end) 
+        if (isalnum(s[start])) 
         {
             cleaned += s[start];
         }
@@ -22,7 +21,7 @@ void PalinString::PalString(string &s)
     cout <<"String without spaces = "<<cleaned<<endl;
 
     start = 0;
-    end = cleaned.length()-1;
+    int end = cleaned.length()-1;
 
     while (start < end){
         //cout << tolower(cleaned[start])<<" "<<tolower(cleaned[end])<<endl;
