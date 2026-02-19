@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include "BitInvert.hpp"
 #include "TwoComplement.hpp"
 #include "BitReverse.hpp"
 #include "RemoveDuplicates.hpp"
 #include "ReverseSentence.hpp"
 #include "ReverseOrderofWords.hpp"
+#include "PalindromeString.hpp"
 
 using namespace std;
 
@@ -19,6 +21,7 @@ int main()
                                 "Reverse Word",
                                 "Reverse Sentence",
                                 "ReverseOrder",
+                                "Palindrome String",
                                 "Remove Duplicates",
                                 "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
@@ -60,12 +63,19 @@ int main()
             break;
             }
         case 6:{
-            string s = "My name is Saksham";
+            string s = "This is a brilliant question";
             ReverseOrder RO;
             RO.RevOrder(s);
             break;
             }
         case 7:{
+            string s = "Tacocat";
+            string s2 ="A man a plan a canal Panama";
+            PalinString PS;
+            PS.PalString(s);
+            break;
+            }
+        case 8:{
             vector <int> n1 = {1,1,2,3,4,4,5};
             RemoveDuplicates RD;
             RD.RemDup(n1);
