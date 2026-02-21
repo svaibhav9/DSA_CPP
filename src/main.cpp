@@ -85,7 +85,7 @@ int main()
             }
         case 8:{
             string s = "tacocat";
-            string s2 ="catocat";
+            string s2 ="aatocat";
             Anagram AG;
             AG.Ana(s,s2);
             break;

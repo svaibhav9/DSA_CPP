@@ -18,16 +18,9 @@ void Anagram::Ana(string &s1, string &s2)
         cout <<"Not Anagrams"<<endl;
         return;
     }
-    size_t start = 0;
-    while (start < s1.length())  
-    {
-        if (s1[start] != s2[start]){
-            cout <<"Not Anagrams"<<endl;
-            return;
-        }
-        start++;
-    }
-    cout <<"Anagrams"<<endl;
 
-    //cout<<"Reversed String = "<<s<<endl;
+    if (s1 == s2)
+        cout <<"Anagrams"<<endl;
+    else
+        cout<<"Not Anagrams"<<endl;
 }
