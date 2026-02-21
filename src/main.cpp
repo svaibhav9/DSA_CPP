@@ -9,6 +9,7 @@
 #include "ReverseOrderofWords.hpp"
 #include "PalindromeString.hpp"
 #include "Anagram.hpp"
+#include "LongestSubstring.hpp"
 
 using namespace std;
 
@@ -24,6 +25,7 @@ int main()
                                 "ReverseOrder",
                                 "Palindrome String",
                                 "Anagram",
+                                "LongestSubstring",
                                 "Remove Duplicates",
                                 "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
@@ -89,6 +91,12 @@ int main()
             break;
             }
         case 9:{
+            string s = "abba";
+            LongestSubstring LS;
+            LS.LongSub(s);
+            break;
+            }
+        case 10:{
             vector <int> n1 = {1,1,2,3,4,4,5};
             RemoveDuplicates RD;
             RD.RemDup(n1);
