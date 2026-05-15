@@ -1,0 +1,21 @@
+# Object files
+*.o
+
+# Executables
+*.out
+*.exe
+main
+
+# Build directories
+build/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# VSCode
+.vscode/
+
+# Mac/Linux junk
+.DS_Store
