@@ -10,6 +10,7 @@
 #include "PalindromeString.hpp"
 #include "Anagram.hpp"
 #include "LongestSubstring.hpp"
+#include "ValidParantheses.hpp"
 
 using namespace std;
 
@@ -27,6 +28,7 @@ int main()
                                 "Anagram",
                                 "LongestSubstring",
                                 "Remove Duplicates",
+                                "Valid Parantheses",
                                 "End of List"};
     for (size_t i = 0 ; i < TestList.size(); i++)
     {
@@ -100,6 +102,12 @@ int main()
             vector <int> n1 = {1,1,2,3,4,4,5};
             RemoveDuplicates RD;
             RD.RemDup(n1);
+            break;
+            }
+        case 11:{
+            string n1 = "{[}]";
+            ValidParantheses VP;
+            cout <<(VP.isValid(n1) == true?"True":"False")<<endl ;
             break;
             }
         default:
